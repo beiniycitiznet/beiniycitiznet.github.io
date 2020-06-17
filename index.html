@@ -1,65 +1,55 @@
 <!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <!-- A Header with your name -->
-  <h1>Beinni Le</h1><br>
 
-  <!-- An image that you would like, maybe a headshot -->
-  <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p160x160/17903442_10158533555325072_3047672347859725931_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=RSRPb0vykK0AX95wpQl&_nc_ht=scontent-lax3-1.xx&_nc_tp=6&oh=b12dcb1d929dc2a50c99a24b25da61ad&oe=5F0C8EE0" target="_blank">
-    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p160x160/17903442_10158533555325072_3047672347859725931_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=RSRPb0vykK0AX95wpQl&_nc_ht=scontent-lax3-1.xx&_nc_tp=6&oh=b12dcb1d929dc2a50c99a24b25da61ad&oe=5F0C8EE0" alt="profile picture">
-    <br><br>
-    </a>
+  <header>
+    <h1>Beinni Le</h1>
+  </header>
 
-  <!-- A couple of paragraphs about yourself -->
-  <p>
-    I am a new Data Analyst, studied at USC Viterbi School of Engineering for the Data Analytics and Visualization Bootcamp. I used Python, Pandas, RapidAPI and Matplotlib to analyze member data.<br><br>
- 
-    I have senior-level, three years of experience with managing projects and working with different levels of colleges and clients to complete a project. 
-    I used to work in a public accounting firm with the international tax group. It helped me develop strong managing and research skills on various tax laws internationally.<br><br>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <img id="bio-image" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p160x160/17903442_10158533555325072_3047672347859725931_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=RSRPb0vykK0AX95wpQl&_nc_ht=scontent-lax3-1.xx&_nc_tp=6&oh=b12dcb1d929dc2a50c99a24b25da61ad&oe=5F0C8EE0" alt="profile picture">
+      </section>
+      <p>
+        I am a new Data Analyst, studied at USC Viterbi School of Engineering for the Data Analytics and Visualization Bootcamp. I used Python, Pandas, RapidAPI and Matplotlib to analyze member data.<br><br>
      
-    I am also a member of the machine learning studying group. Our goal is to learn more about machine learning, 
-    build up different functions that can be used in our future career, and analyze data on our own. 
-    We seek a different topic for every project to explore the unsupervised learning and supervised learning side of the machine learning.<br><br>
-     
-    I intend to continue doing hands-on data analysis, while developing additional technical and leadership skills.<br><br>
-     
-    Technical Skills: data analysis, Python, Pandas, Excel, VBA<br><br>
-     
-    Leadership Skills: training and mentoring, reviewing, communication, point of contact, project management<br>
-  </p>
+        I have senior-level, three years of experience with managing projects and working with different levels of colleges and clients to complete a project. 
+        I used to work in a public accounting firm with the international tax group. It helped me develop strong managing and research skills on various tax laws internationally.<br><br>
+         
+        I am also a member of the machine learning studying group. Our goal is to learn more about machine learning, 
+        build up different functions that can be used in our future career, and analyze data on our own. 
+        We seek a different topic for every project to explore the unsupervised learning and supervised learning side of the machine learning.<br><br>
+         
+        I intend to continue doing hands-on data analysis, while developing additional technical and leadership skills.<br><br>
+         
+        Technical Skills: data analysis, Python, Pandas, Excel, VBA<br><br>
+         
+        Leadership Skills: training and mentoring, reviewing, communication, point of contact, project management<br>
+      </p>
+    </section>
 
-  <!-- An unordered list, containing your email, github, and linkedin links -->
-  <h2>Contact Information:</h2>
-  <ul>
-    <li>Email:<a href="mailto:beiniycitiznet@gmail.com">beiniycitiznet@gmail.com</a></li>
-    <li>Github:<a href="https://github.com/beiniycitiznet" target="_blank">beiniycitiznet</a></li>
-    <li>Linkedin:<a href="https://www.linkedin.com/in/sheng-le-12197ab8/" target="_blank">linkedin.com/in/shengle</a></li>
-  </ul>
-
-  <h2>My project</h2>
-  <ul>
-    <li><a href="https://beiniycitiznet.github.io/Project/" target="_blank">Project Description HTML</a></li>
-  </ul>
-  
-  <!-- A table with some of your favorite things -->
-  <h2>My Favorites:</h2>
-  <table border="2">
-    <tr>
-      <th>Color</th>
-      <th>Food</th>
-      <th>Country for Vacation</th>
-    </tr>
-    <tr>
-      <td>white</td>
-      <td>Chinese food</td>
-      <td>Japan</td>
-    </tr>
-  </table>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul> 
+        <li><strong>Email:</strong> <br><a href="mailto:beiniycitiznet@gmail.com">beiniycitiznet@gmail.com</a></li>
+        <li><strong>Github:</strong> <br><a href="https://github.com/beiniycitiznet" target="_blank">beiniycitiznet</a></li>
+        <li><strong>LinkedIn:</strong> <br><a href="https://www.linkedin.com/in/sheng-le-12197ab8/" target="_blank">linkedin.com/shengle</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
